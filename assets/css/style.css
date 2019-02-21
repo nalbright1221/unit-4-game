@@ -1,3 +1,16 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-image: repeat;
+
+}
+
+.body {
+    background-color: white;
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
 .crystals {
     display: flex;
@@ -6,7 +19,6 @@
     
 }
 .crystal {
-border: 1px solid red;
 height: 200px;
 width:  200px; 
 
