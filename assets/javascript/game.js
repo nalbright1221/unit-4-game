@@ -17,7 +17,7 @@ var gameStartReset = function () {
             'https://i.postimg.cc/LqBpXt7R/purple.jpg'];
     
     
-        var randomResult = Math.floor(Math.random() * 101) + 19;
+       randomResult = Math.floor(Math.random() * 101) + 19;
     
         $("#result").html('Random Result: ' + randomResult);
     
@@ -35,18 +35,16 @@ var gameStartReset = function () {
             });
     
             ///puts crystal images into  div 
-    
             crystal.css({
                 "background-image":"url('" + images[i] + "')",
                 "background-size":"cover"
-    
+
             });
     
             // //take this out so you cant see the numerical value for each crystal
             // crystal.html(random);
     
             $(".crystals").append(crystal);
-    
         }
         $("#current-total").html(previous);
     }
@@ -68,7 +66,7 @@ $(document).on('click', ".crystal", function () {
     if (previous > randomResult) {
 
         loss++;
-
+        debugger
         $("#loss").html(loss);
         
         previous = 0;
@@ -79,7 +77,7 @@ $(document).on('click', ".crystal", function () {
     else if (previous === randomResult) {
 
         win++;
-
+        debugger
         $("#win").html(win);
         
         previous = 0;
